@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUDUser</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  
+  </head>
+
+  <body>
+        <%= link_to 'Listar', '/users'%>
+        <%= link_to 'Crear', '/users/new'%> 
+    <%= yield %>
+  </body>
+</html>

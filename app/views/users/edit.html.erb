@@ -1,0 +1,35 @@
+
+
+<div class="container" style="width:50%; ">
+
+    <section>
+        <h1 class="text-center m-5">EDITAR USUARIO</h1>
+    </section>
+    <%= form_for @user do |f| %>
+
+    <div class=form-group>
+        <%= f.label :name, "NOMBRE:" %>
+        <%= f.text_field :name,class:"form-control" %>
+    </div>
+
+    <div class=form-group>
+        <%= f.label :surname, "APELLIDO:" %>
+        <%= f.text_field :surname,class:"form-control" %>
+    </div>
+
+    <div class=form-group>
+        <%= f.label :document, "DOCUMENTO:" %>
+        <%= f.text_field :document,class:"form-control" %>
+    </div>
+
+    <div class=form-group>
+        <%= f.label :phone, "TELEFONO:" %>
+        <%= f.text_field :phone,class:"form-control" %>
+    </div>
+
+    <div>
+        <%= f.submit 'EDITAR USUARIO',:class =>'btn btn-info'%>
+    </div>
+
+    <% end %>
+</div>
